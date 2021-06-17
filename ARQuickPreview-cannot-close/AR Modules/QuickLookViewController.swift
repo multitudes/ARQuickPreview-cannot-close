@@ -21,30 +21,23 @@ struct QuickLookPreview: View {
 				showQuickLook = true
 			})
 		.fullScreenCover(isPresented: $showQuickLook) {
-			ZStack(alignment: .topLeading) {
+			//ZStack(alignment: .topLeading) {
 				QuickLookController(url: self.selectedURL!,isPresented: $showQuickLook)
-				HStack {
-					Button(action: {
-						self.showQuickLook = false
-					}, label: {
-						Text("")
-
-							.font(.largeTitle)
-							.padding(.horizontal, 20)
-							//.padding(.vertical, -15)
-					})
-
-				}
-			}
+//				HStack {
+//					Button(action: {
+//						self.showQuickLook = false
+//					}, label: {
+//						Text("")
+//							.font(.largeTitle)
+//							.padding(.horizontal, 20)
+//							//.padding(.vertical, -15)
+//					})
+//
+//				}
+			//}
 			.ignoresSafeArea()
 		}
-		//			.sheet(isPresented: $showQuickLook, onDismiss: {
-		//				self.showQuickLook = false
-		//			}) {
-		//				if  self.selectedURL != nil {
-		//					QuickLookController(url: self.selectedURL!,isPresented: $showQuickLook)
-		//				}
-		//			}
+
 	}
 }
 
@@ -52,24 +45,25 @@ struct QuickLookPreview: View {
 struct QuickLookController: UIViewControllerRepresentable {
 
 	var url: URL
-	//var onDismiss: () -> Void
+
 	@Binding var isPresented: Bool
 
 	func makeCoordinator() -> Coordinator {
 		Coordinator(self)
 	}
 
-	func updateUIViewController(_ viewController: QLPreviewController, context: UIViewControllerRepresentableContext<QuickLookController>) {
+	func updateUIViewController(_ viewController: UINavigationController, context: UIViewControllerRepresentableContext<QuickLookController>) {
 		
 	}
 
-	func makeUIViewController(context: Context) -> QLPreviewController {
+	func makeUIViewController(context: Context) -> UINavigationController {
 		let controller = QLPreviewController()
 
 		controller.delegate = context.coordinator
 		controller.dataSource = context.coordinator
-
-		return controller
+		let navigationController = UINavigationController(rootViewController: controller)
+			   return navigationController
+		return navigationController
 	}
 
 	class Coordinator: NSObject, QLPreviewControllerDataSource, QLPreviewControllerDelegate {
@@ -79,7 +73,7 @@ struct QuickLookController: UIViewControllerRepresentable {
 			self.parent = qlPreviewController
 			super.init()
 		}
-		// this for the delegate
+		// this for the delegate (image transition)
 		func previewController(_ controller: QLPreviewController,
 		   transitionViewFor item: QLPreviewItem) -> UIView? {
 			let imageView = UIImageView()
@@ -96,6 +90,14 @@ struct QuickLookController: UIViewControllerRepresentable {
 			return self.parent.url as QLPreviewItem
 		}
 
+		func previewControllerWillDismiss(_ controller: QLPreviewController) {
+			print("I will dismiss")
+		}
+
+		// this is probably wrong - just ignore...
+		@objc func dismiss() {
+					parent.isPresented = false
+				}
 	}
 }
 
