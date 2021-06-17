@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		456388D2267B4DCA00395AED /* ARQuickPreview_cannot_closeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456388D1267B4DCA00395AED /* ARQuickPreview_cannot_closeApp.swift */; };
+		456388D4267B4DCA00395AED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456388D3267B4DCA00395AED /* ContentView.swift */; };
+		456388D6267B4DCD00395AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456388D5267B4DCD00395AED /* Assets.xcassets */; };
+		456388D9267B4DCD00395AED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456388D8267B4DCD00395AED /* Preview Assets.xcassets */; };
+		45B9E045267B52E6003DE003 /* QuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456388E2267B502500395AED /* QuickLookViewController.swift */; };
+		45B9E046267B52E9003DE003 /* CubeYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 456388E1267B502500395AED /* CubeYellow.png */; };
+		45B9E04A267B53CC003DE003 /* cubeYellow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 45B9E049267B53C1003DE003 /* cubeYellow.usdz */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		456388CE267B4DCA00395AED /* ARQuickPreview-cannot-close.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARQuickPreview-cannot-close.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		456388D1267B4DCA00395AED /* ARQuickPreview_cannot_closeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARQuickPreview_cannot_closeApp.swift; sourceTree = "<group>"; };
+		456388D3267B4DCA00395AED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		456388D5267B4DCD00395AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		456388D8267B4DCD00395AED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		456388DA267B4DCD00395AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456388E1267B502500395AED /* CubeYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CubeYellow.png; sourceTree = "<group>"; };
+		456388E2267B502500395AED /* QuickLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookViewController.swift; sourceTree = "<group>"; };
+		45B9E049267B53C1003DE003 /* cubeYellow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cubeYellow.usdz; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		456388CB267B4DCA00395AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		456388C5267B4DCA00395AED = {
+			isa = PBXGroup;
+			children = (
+				456388D0267B4DCA00395AED /* ARQuickPreview-cannot-close */,
+				456388CF267B4DCA00395AED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		456388CF267B4DCA00395AED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				456388CE267B4DCA00395AED /* ARQuickPreview-cannot-close.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		456388D0267B4DCA00395AED /* ARQuickPreview-cannot-close */ = {
+			isa = PBXGroup;
+			children = (
+				456388D1267B4DCA00395AED /* ARQuickPreview_cannot_closeApp.swift */,
+				456388D3267B4DCA00395AED /* ContentView.swift */,
+				456388E0267B502500395AED /* AR Modules */,
+				456388D5267B4DCD00395AED /* Assets.xcassets */,
+				45B9E047267B53C1003DE003 /* AR Models */,
+				456388DA267B4DCD00395AED /* Info.plist */,
+				456388D7267B4DCD00395AED /* Preview Content */,
+			);
+			path = "ARQuickPreview-cannot-close";
+			sourceTree = "<group>";
+		};
+		456388D7267B4DCD00395AED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				456388D8267B4DCD00395AED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		456388E0267B502500395AED /* AR Modules */ = {
+			isa = PBXGroup;
+			children = (
+				456388E1267B502500395AED /* CubeYellow.png */,
+				456388E2267B502500395AED /* QuickLookViewController.swift */,
+			);
+			path = "AR Modules";
+			sourceTree = "<group>";
+		};
+		45B9E047267B53C1003DE003 /* AR Models */ = {
+			isa = PBXGroup;
+			children = (
+				45B9E049267B53C1003DE003 /* cubeYellow.usdz */,
+			);
+			path = "AR Models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		456388CD267B4DCA00395AED /* ARQuickPreview-cannot-close */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456388DD267B4DCD00395AED /* Build configuration list for PBXNativeTarget "ARQuickPreview-cannot-close" */;
+			buildPhases = (
+				456388CA267B4DCA00395AED /* Sources */,
+				456388CB267B4DCA00395AED /* Frameworks */,
+				456388CC267B4DCA00395AED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ARQuickPreview-cannot-close";
+			productName = "ARQuickPreview-cannot-close";
+			productReference = 456388CE267B4DCA00395AED /* ARQuickPreview-cannot-close.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		456388C6267B4DCA00395AED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					456388CD267B4DCA00395AED = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 456388C9267B4DCA00395AED /* Build configuration list for PBXProject "ARQuickPreview-cannot-close" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 456388C5267B4DCA00395AED;
+			productRefGroup = 456388CF267B4DCA00395AED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				456388CD267B4DCA00395AED /* ARQuickPreview-cannot-close */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		456388CC267B4DCA00395AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B9E046267B52E9003DE003 /* CubeYellow.png in Resources */,
+				456388D9267B4DCD00395AED /* Preview Assets.xcassets in Resources */,
+				45B9E04A267B53CC003DE003 /* cubeYellow.usdz in Resources */,
+				456388D6267B4DCD00395AED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		456388CA267B4DCA00395AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456388D4267B4DCA00395AED /* ContentView.swift in Sources */,
+				456388D2267B4DCA00395AED /* ARQuickPreview_cannot_closeApp.swift in Sources */,
+				45B9E045267B52E6003DE003 /* QuickLookViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		456388DB267B4DCD00395AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		456388DC267B4DCD00395AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		456388DE267B4DCD00395AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ARQuickPreview-cannot-close/Preview Content\"";
+				DEVELOPMENT_TEAM = GGXD5E6AF8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ARQuickPreview-cannot-close/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.laurent.ARQuickPreview-cannot-close";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		456388DF267B4DCD00395AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ARQuickPreview-cannot-close/Preview Content\"";
+				DEVELOPMENT_TEAM = GGXD5E6AF8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ARQuickPreview-cannot-close/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.laurent.ARQuickPreview-cannot-close";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		456388C9267B4DCA00395AED /* Build configuration list for PBXProject "ARQuickPreview-cannot-close" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456388DB267B4DCD00395AED /* Debug */,
+				456388DC267B4DCD00395AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456388DD267B4DCD00395AED /* Build configuration list for PBXNativeTarget "ARQuickPreview-cannot-close" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456388DE267B4DCD00395AED /* Debug */,
+				456388DF267B4DCD00395AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 456388C6267B4DCA00395AED /* Project object */;
+}
