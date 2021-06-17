@@ -15,10 +15,13 @@ I am using Xcode 12.5 release and iPhone mini with beta software but this is not
 
 Also there is a navigation controller flashing shortly before showing the QLpreview in AR
 
+I also get this in the console:
+
+> 2021-06-17 12:25:15.051105+0200 ARQuickPreview-cannot-close[3315:1912939] [default] [self.extensionContext conformsToProtocol:auxHostProtocol.protocol] - /Library/Caches/com.apple.xbs/Sources/ExtensionFoundation/ExtensionKit-40.100/ExtensionFoundation/Source/NSExtension/NSExtensionSupport/EXExtensionContext.m:332: Class QLPreviewExtensionHostContext does not conform to aux host protocol: QLRemotePreviewHost
+
+
+
 This is a screenshot
 ![IMG_A9D0204C057B-1](https://user-images.githubusercontent.com/29355828/122382453-39e93580-cf6a-11eb-9372-ede02e148493.jpeg)
 
 
-I also get this in the console:
-
-> 2021-06-17 12:25:15.051105+0200 ARQuickPreview-cannot-close[3315:1912939] [default] [self.extensionContext conformsToProtocol:auxHostProtocol.protocol] - /Library/Caches/com.apple.xbs/Sources/ExtensionFoundation/ExtensionKit-40.100/ExtensionFoundation/Source/NSExtension/NSExtensionSupport/EXExtensionContext.m:332: Class QLPreviewExtensionHostContext does not conform to aux host protocol: QLRemotePreviewHost
