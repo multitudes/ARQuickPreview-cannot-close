@@ -59,25 +59,17 @@ struct QuickLookController: UIViewControllerRepresentable {
 		Coordinator(self)
 	}
 
-	func updateUIViewController(_ viewController: UINavigationController, context: UIViewControllerRepresentableContext<QuickLookController>) {
-		if let controller = viewController.topViewController as? QLPreviewController {
-			controller.reloadData()
-		}
+	func updateUIViewController(_ viewController: QLPreviewController, context: UIViewControllerRepresentableContext<QuickLookController>) {
+		
 	}
 
-	func makeUIViewController(context: Context) -> UINavigationController {
+	func makeUIViewController(context: Context) -> QLPreviewController {
 		let controller = QLPreviewController()
 
 		controller.delegate = context.coordinator
 		controller.dataSource = context.coordinator
-		controller.navigationController?.setNavigationBarHidden(true, animated: false)
-		controller.reloadData()
 
-		controller.reloadData()
-
-		let navController = UINavigationController(rootViewController: controller)
-		print(navController.navigationItem.rightBarButtonItem)
-		return navController
+		return controller
 	}
 
 	class Coordinator: NSObject, QLPreviewControllerDataSource, QLPreviewControllerDelegate {
