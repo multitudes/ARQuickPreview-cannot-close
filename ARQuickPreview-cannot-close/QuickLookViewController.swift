@@ -1,6 +1,6 @@
 //
 //  QuickLookViewController.swift
-//  natura-jenensis
+//
 //
 //  Created by Laurent B on 16/06/2021.
 //
@@ -21,20 +21,7 @@ struct QuickLookPreview: View {
 				showQuickLook = true
 			})
 		.fullScreenCover(isPresented: $showQuickLook) {
-			//ZStack(alignment: .topLeading) {
 				QuickLookController(url: self.selectedURL!,isPresented: $showQuickLook)
-//				HStack {
-//					Button(action: {
-//						self.showQuickLook = false
-//					}, label: {
-//						Text("")
-//							.font(.largeTitle)
-//							.padding(.horizontal, 20)
-//							//.padding(.vertical, -15)
-//					})
-//
-//				}
-			//}
 			.ignoresSafeArea()
 		}
 
