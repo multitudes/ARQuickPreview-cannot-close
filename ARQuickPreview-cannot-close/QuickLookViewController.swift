@@ -1,6 +1,6 @@
 //
 //  QuickLookViewController.swift
-//  natura-jenensis
+
 //
 //  Created by Laurent B on 16/06/2021.
 //
@@ -38,21 +38,14 @@ struct QuickLookPreview: View {
 			}
 			.ignoresSafeArea()
 		}
-		//			.sheet(isPresented: $showQuickLook, onDismiss: {
-		//				self.showQuickLook = false
-		//			}) {
-		//				if  self.selectedURL != nil {
-		//					QuickLookController(url: self.selectedURL!,isPresented: $showQuickLook)
-		//				}
-		//			}
+
 	}
 }
 
 
 struct QuickLookController: UIViewControllerRepresentable {
-
 	var url: URL
-	//var onDismiss: () -> Void
+
 	@Binding var isPresented: Bool
 
 	func makeCoordinator() -> Coordinator {

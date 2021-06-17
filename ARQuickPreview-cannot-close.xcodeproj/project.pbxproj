@@ -8,22 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		456388D2267B4DCA00395AED /* ARQuickPreview_cannot_closeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456388D1267B4DCA00395AED /* ARQuickPreview_cannot_closeApp.swift */; };
-		456388D4267B4DCA00395AED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456388D3267B4DCA00395AED /* ContentView.swift */; };
 		456388D6267B4DCD00395AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456388D5267B4DCD00395AED /* Assets.xcassets */; };
 		456388D9267B4DCD00395AED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456388D8267B4DCD00395AED /* Preview Assets.xcassets */; };
 		45B9E045267B52E6003DE003 /* QuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456388E2267B502500395AED /* QuickLookViewController.swift */; };
-		45B9E046267B52E9003DE003 /* CubeYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 456388E1267B502500395AED /* CubeYellow.png */; };
 		45B9E04A267B53CC003DE003 /* cubeYellow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 45B9E049267B53C1003DE003 /* cubeYellow.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		456388CE267B4DCA00395AED /* ARQuickPreview-cannot-close.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARQuickPreview-cannot-close.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		456388D1267B4DCA00395AED /* ARQuickPreview_cannot_closeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARQuickPreview_cannot_closeApp.swift; sourceTree = "<group>"; };
-		456388D3267B4DCA00395AED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		456388D5267B4DCD00395AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		456388D8267B4DCD00395AED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		456388DA267B4DCD00395AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		456388E1267B502500395AED /* CubeYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CubeYellow.png; sourceTree = "<group>"; };
 		456388E2267B502500395AED /* QuickLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookViewController.swift; sourceTree = "<group>"; };
 		45B9E049267B53C1003DE003 /* cubeYellow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cubeYellow.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,8 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				456388D1267B4DCA00395AED /* ARQuickPreview_cannot_closeApp.swift */,
-				456388D3267B4DCA00395AED /* ContentView.swift */,
-				456388E0267B502500395AED /* AR Modules */,
+				456388E2267B502500395AED /* QuickLookViewController.swift */,
 				456388D5267B4DCD00395AED /* Assets.xcassets */,
 				45B9E047267B53C1003DE003 /* AR Models */,
 				456388DA267B4DCD00395AED /* Info.plist */,
@@ -75,15 +70,6 @@
 				456388D8267B4DCD00395AED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		456388E0267B502500395AED /* AR Modules */ = {
-			isa = PBXGroup;
-			children = (
-				456388E1267B502500395AED /* CubeYellow.png */,
-				456388E2267B502500395AED /* QuickLookViewController.swift */,
-			);
-			path = "AR Modules";
 			sourceTree = "<group>";
 		};
 		45B9E047267B53C1003DE003 /* AR Models */ = {
@@ -151,7 +137,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45B9E046267B52E9003DE003 /* CubeYellow.png in Resources */,
 				456388D9267B4DCD00395AED /* Preview Assets.xcassets in Resources */,
 				45B9E04A267B53CC003DE003 /* cubeYellow.usdz in Resources */,
 				456388D6267B4DCD00395AED /* Assets.xcassets in Resources */,
@@ -165,7 +150,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				456388D4267B4DCA00395AED /* ContentView.swift in Sources */,
 				456388D2267B4DCA00395AED /* ARQuickPreview_cannot_closeApp.swift in Sources */,
 				45B9E045267B52E6003DE003 /* QuickLookViewController.swift in Sources */,
 			);

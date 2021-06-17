@@ -11,7 +11,6 @@ import SwiftUI
 struct ARQuickPreview_cannot_closeApp: App {
     var body: some Scene {
         WindowGroup {
-            //ContentView()
 			QuickLookPreview()
         }
     }
